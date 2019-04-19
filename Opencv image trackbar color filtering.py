@@ -39,7 +39,3 @@ while True:
     if key == ord("q"):
         cv.destroyAllWindows()
         break
-
-
-
-

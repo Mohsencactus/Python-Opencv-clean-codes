@@ -49,7 +49,3 @@ while True:
     if key == ord("q"):
         break
         cv.destroyAllWindows
-    
-    '''
-    contours = cv.findContours(binaried,cv.RETR_TREE,cv.CHAIN_APPROX_SIMPLE)[1]
-    '''
