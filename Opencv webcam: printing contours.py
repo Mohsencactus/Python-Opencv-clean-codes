@@ -14,15 +14,14 @@ while True:
     filtered = cv.bitwise_and(frame,frame,mask = binaried)
 
     contours = cv.findContours(binaried,cv.RETR_TREE,cv.CHAIN_APPROX_SIMPLE)[0]
-
+    
     if len(contours) > 0:
-        contour = max(contours, key = cv.contourArea)
-        _,radius = cv.minEnclosingCircle(contour)
-        (x,y,w,h) = cv.boundingRect(contour) 
+        print(contours)
+        print(type(contours))
+        print(len(contours))
         
-
-    else :
-        print("Nothing found to contour")
+    else:
+        print("Nohting found to contour")
 
     cv.imshow("frame",frame)
     cv.imshow("filtered",filtered)

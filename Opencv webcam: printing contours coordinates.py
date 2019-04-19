@@ -19,7 +19,8 @@ while True:
         contour = max(contours, key = cv.contourArea)
         _,radius = cv.minEnclosingCircle(contour)
         (x,y,w,h) = cv.boundingRect(contour) 
-        
+        #coordinates
+        print(radius,x,y,w,h)
 
     else :
         print("Nothing found to contour")
