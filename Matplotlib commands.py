@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import PIL as pl
 import numpy as np
 
-aks = pl.Image.open('/home/mohsencactus/python 2/Begin/pink.png')
+aks = pl.Image.open('/home/mohsencactus/python 2/Begin/2pink.png')
 image = np.array(aks)
 
 
