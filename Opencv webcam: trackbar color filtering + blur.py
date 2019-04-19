@@ -4,7 +4,7 @@ def nothing(x):
     pass
 
 webcam = cv.VideoCapture(0)
-cv.namedWindow('frame',cv.WINDOW_FREERATIO)
+cv.namedWindow('frame')
 
 cv.createTrackbar('hmin','frame',0,255,nothing)
 cv.createTrackbar('hmax','frame',0,255,nothing)
