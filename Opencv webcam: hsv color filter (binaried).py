@@ -8,8 +8,8 @@ hsvmax = np.array([120,255,255])
 
 while True: 
     _,frame = webcam.read()
-    
     hsv = cv.cvtColor(frame,cv.COLOR_BGR2HSV)
+    
     binaried = cv.inRange(hsv,hsvmin,hsvmax)
 
     cv.imshow("frame",frame)
