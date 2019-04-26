@@ -6,7 +6,7 @@ def nthn(X):
 
 webcam = cv.VideoCapture(0)
 
-cv.namedWindow("window2")
+cv.namedWindow("window2",cv.WINDOW_NORMAL)
 
 cv.createTrackbar("Hmin","window2",0,255,nthn)
 cv.createTrackbar("Hmax","window2",0,255,nthn)
@@ -35,7 +35,7 @@ while True:
     filtered = cv.bitwise_and(frame,frame,mask = binaried)
 
     cv.imshow("window2",filtered)
-    cv.imshow("window3",binaried)
+    #cv.imshow("window3",binaried)
     key = cv.waitKey(1)
     if key == ord("q"):
         cv.destroyAllWindows()
